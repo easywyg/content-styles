@@ -1,0 +1,36 @@
+//////////////////////////////////////////////////////////////////////////////
+// Figures
+figure {
+  display: block;
+  margin: 0;
+  position: relative;
+
+  &.easywyg-pull-left   {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+
+  &.easywyg-pull-center {
+    float: none;
+    text-align: center;
+    overflow: hidden;
+    margin: 1em 0;
+
+    img { display: inline-block; }
+  }
+
+  &.easywyg-pull-right {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+  }
+
+  figcaption { text-align: center; }
+}

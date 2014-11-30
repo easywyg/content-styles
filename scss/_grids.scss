@@ -1,0 +1,53 @@
+//////////////////////////////////////////////////////////////////////////////
+// Grid (12-column grid)
+.easywyg-grid [class^=easywyg-col-] {
+  position: relative;
+  min-height: 1em;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left !important;
+
+  figure img {
+    width: 100%;
+  }
+
+  :first-child { margin-top: 0; }
+  *:last-of-type { margin-bottom: 0; }
+}
+
+.easywyg-col-1  { width: 8.33333%; }
+.easywyg-col-2  { width: 16.66667%; }
+.easywyg-col-3  { width: 25%; }
+.easywyg-col-4  { width: 33.33333%; }
+.easywyg-col-5  { width: 41.66667%; }
+.easywyg-col-6  { width: 50%; }
+.easywyg-col-7  { width: 58.33333%; }
+.easywyg-col-8  { width: 66.66667%; }
+.easywyg-col-9  { width: 75%; }
+.easywyg-col-10 { width: 83.33333%; }
+.easywyg-col-11 { width: 91.66667%; }
+.easywyg-col-12 { width: 100%; }
+
+.easywyg-grid {
+  clear: both;
+
+  * { box-sizing: border-box; }
+
+  > *:before,
+  > *:after {
+    box-sizing: border-box;
+  }
+
+  // Clearfix
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+
+  margin: 1em -10px;
+}
+

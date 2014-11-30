@@ -1,0 +1,24 @@
+//////////////////////////////////////////////////////////////////////////////
+// Tables
+table {
+  width: 100%;
+  max-width: 100%;
+  margin: 1em 0;
+  border-collapse: collapse;
+
+  // Bottom align for column headings
+  > tr > th {
+    vertical-align: bottom;
+  }
+
+  // Cells
+  > tr {
+    > th,
+    > td {
+      padding: $table-cell-padding;
+      vertical-align: top;
+    }
+  }
+
+  th { text-align: left; }
+}

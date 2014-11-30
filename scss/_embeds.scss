@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////////////////////////////////
+// Embed content
+.easywyg-embed {
+  text-align: center;
+  margin: 1em 0;
+  clear: both;
+  position: relative;
+
+  &:hover .easywyg-ui-remove-button {
+    opacity: 0.7;
+  }
+
+  > * {
+    text-align: left;
+  }
+
+  iframe { display: inline-block !important; }
+}
