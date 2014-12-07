@@ -34,4 +34,4 @@ Then copy this URL and add it to your website settings in [Dashboard](http://eas
 
 Our robot will get this css file, parse it and then, build styles dropdown for you:
 
-![Easywyg styles dropdown](styles_dropdown.jpg)
+![Easywyg styles dropdown](styles_dropdown.png)
