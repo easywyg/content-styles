@@ -1,20 +1,21 @@
 // Easywyg default content-styles
-// Recommendation: Use Autoprefixer for this styelseet: https://github.com/postcss/autoprefixer
 
 // Variables
-
 $table-cell-padding: 4px;
 $selection-bg-color: #fff7aa;
 
-@import "scss/grids";
-@import "scss/tables";
-@import "scss/embeds";
-@import "scss/figures";
+@import "partials/grids";
+@import "partials/tables";
+@import "partials/embeds";
+@import "partials/figures";
+
+/* Assume that is your website styles */
 
 ::selection { background-color: $selection-bg-color; }
 
 body {
   font-family: Arial, sans-serif;
+  padding: 1em;
 }
 
 a {
@@ -35,7 +36,6 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  text-transform: capitalize;
   clear: both;
 }
 
@@ -62,6 +62,8 @@ hr {
     top: 0.5em;
   }
 }
+
+/* Styles below will be added into 'styles' dropdown in easywyg editor */
 
 /* Name: Paragraph
  * Group: Paragraphs

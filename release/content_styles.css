@@ -1,0 +1,369 @@
+.easywyg-grid [class^=easywyg-col-] {
+  position: relative;
+  min-height: 1em;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left !important; }
+  .easywyg-grid [class^=easywyg-col-] figure img {
+    width: 100%; }
+  .easywyg-grid [class^=easywyg-col-] :first-child {
+    margin-top: 0; }
+  .easywyg-grid [class^=easywyg-col-] *:last-of-type {
+    margin-bottom: 0; }
+
+.easywyg-col-2 {
+  width: 16.66667%; }
+
+.easywyg-col-3 {
+  width: 25%; }
+
+.easywyg-col-4 {
+  width: 33.33333%; }
+
+.easywyg-col-6 {
+  width: 50%; }
+
+.easywyg-col-12 {
+  width: 100%; }
+
+.easywyg-grid {
+  clear: both;
+  margin: 1em -10px; }
+  .easywyg-grid * {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box; }
+  .easywyg-grid > *:before, .easywyg-grid > *:after {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box; }
+  .easywyg-grid:before, .easywyg-grid:after {
+    content: " ";
+    display: table; }
+  .easywyg-grid:after {
+    clear: both; }
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin: 1em 0;
+  border-collapse: collapse; }
+  table > tr > th {
+    vertical-align: bottom; }
+  table > tr > th, table > tr > td {
+    padding: 4px;
+    vertical-align: top; }
+  table th {
+    text-align: left; }
+
+.easywyg-embed {
+  text-align: center;
+  margin: 1em 0;
+  clear: both;
+  position: relative; }
+  .easywyg-embed > * {
+    text-align: left; }
+  .easywyg-embed iframe {
+    display: inline-block !important; }
+
+figure {
+  display: block;
+  margin: 0;
+  position: relative; }
+  figure.easywyg-pull-left {
+    float: left;
+    margin: 0 1em 1em 0; }
+  figure.easywyg-pull-center {
+    float: none;
+    text-align: center;
+    overflow: hidden;
+    margin: 1em 0; }
+    figure.easywyg-pull-center img {
+      display: inline-block; }
+  figure.easywyg-pull-right {
+    float: right;
+    margin: 0 0 1em 1em; }
+  figure img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    border: 0; }
+  figure figcaption {
+    text-align: center; }
+
+/* Assume that is your website styles */
+::-moz-selection {
+  background-color: #fff7aa; }
+::selection {
+  background-color: #fff7aa; }
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 1em; }
+
+a {
+  text-decoration: none;
+  color: #0060a0;
+  border-bottom: 1px solid rgba(0, 96, 160, 0.2);
+  white-space: nowrap; }
+  a:hover, a:focus {
+    color: #d04000;
+    border-bottom-color: rgba(208, 64, 0, 0.2); }
+  a:visited {
+    color: #7090b0;
+    border-bottom-color: rgba(112, 144, 176, 0.2); }
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both; }
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em; }
+
+sub {
+  top: 0.4em; }
+
+ul, ol {
+  clear: both; }
+
+p {
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
+
+hr {
+  position: relative; }
+  hr:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0.5em; }
+
+/* Styles below will be added into 'styles' dropdown in easywyg editor */
+/* Name: Paragraph
+ * Group: Paragraphs
+ */
+p {
+  color: inherit; }
+
+/* Name: Centered Paragraph
+ * Group: Paragraphs
+ */
+p.center {
+  text-align: center; }
+
+/* Name: Bigger Paragraph
+ * Group: Paragraphs
+ */
+p.bigger {
+  font-size: 120%; }
+
+/* Name: Right Aligned Paragraph
+ * Group: Paragraphs
+ */
+p.right {
+  text-align: right; }
+
+/* Name: Heading H1
+ * Group: Paragraphs
+ */
+h1 {
+  text-align: center;
+  line-height: 1.5em; }
+
+/* Name: Heading H2
+ * Group: Paragraphs
+ */
+h2 {
+  color: inherit;
+  line-height: 1.4em; }
+
+/* Name: Heading H3
+ * Group: Paragraphs
+ */
+h3 {
+  color: inherit;
+  line-height: 1.4em; }
+
+/* Name: Heading H4
+ * Group: Paragraphs
+ */
+h4 {
+  color: inherit;
+  line-height: 1.4em; }
+
+/* Name: Heading H5
+ * Group: Paragraphs
+ */
+h5 {
+  color: inherit;
+  line-height: 1.4em; }
+
+/* Name: Heading H6
+ * Group: Paragraphs
+ */
+h6 {
+  color: inherit;
+  line-height: 1.4em; }
+
+/* Name: Headline
+ * Group: Paragraphs
+ */
+h3.headline {
+  text-align: center;
+  margin: 2em 0;
+  color: #2B679A;
+  font-weight: normal; }
+
+/* Name: Blockquote
+ * Group: Paragraphs
+ */
+blockquote {
+  color: inherit; }
+
+/* Name: Annotation
+ * Group: Paragraphs
+ */
+blockquote.annotation {
+  margin: 2em 5em;
+  font-style: italic;
+  padding: 0;
+  background-color: #CBEAFF !important;
+  padding: 15px;
+  border-radius: 4px; }
+
+/* Name: Preformatted Text
+ * Group: Paragraphs
+ */
+pre {
+  color: inherit; }
+
+/* Name: Bold
+ * Group: Formatting
+ */
+strong {
+  color: inherit; }
+
+/* Name: Italic
+ * Group: Formatting
+ */
+em {
+  color: inherit; }
+
+/* Name: Strike
+ * Group: Formatting
+ */
+s {
+  color: inherit; }
+
+/* Name: Underline
+ * Group: Formatting
+ */
+u {
+  color: inherit; }
+
+/* Name: Quote
+ * Group: Formatting
+ */
+q {
+  color: inherit; }
+
+/* Name: Code
+ * Group: Formatting
+ */
+code {
+  color: inherit; }
+
+/* Name: Address
+ * Group: Formatting
+ */
+address {
+  color: inherit; }
+
+/* Name: Subscript
+ * Group: Formatting
+ */
+sub {
+  color: inherit; }
+
+/* Name: Superscript
+ * Group: Formatting
+ */
+sup {
+  color: inherit; }
+
+/* Name: Smaller Text
+ * Group: Formatting
+ */
+small {
+  color: inherit; }
+
+/* Name: Variable or Formula
+ * Group: Formatting
+ */
+var {
+  color: inherit; }
+
+/* Name: Sample Text
+ * Group: Formatting
+ */
+samp {
+  color: inherit; }
+
+/* Name: 2 columns
+ * Group: Newspaper layout
+ */
+p.two-columns {
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px; }
+
+/* Name: 3 columns
+ * Group: Newspaper layout
+ */
+p.three-columns {
+  -webkit-columns: 3;
+     -moz-columns: 3;
+          columns: 3;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px; }
+
+/* Name: 4 columns
+ * Group: Newspaper layout
+ */
+p.four-columns {
+  -webkit-columns: 4;
+     -moz-columns: 4;
+          columns: 4;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px; }
+
+/* Name: 5 columns
+ * Group: Newspaper layout
+ */
+p.five-columns {
+  -webkit-columns: 5;
+     -moz-columns: 5;
+          columns: 5;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px; }
+
+/* Name: 6 columns
+ * Group: Newspaper layout
+ */
+p.six-columns {
+  -webkit-columns: 6;
+     -moz-columns: 6;
+          columns: 6;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px; }
