@@ -7,16 +7,17 @@ table {
   border-collapse: collapse;
 
   // Bottom align for column headings
-  > tr > th {
+  tr th {
     vertical-align: bottom;
   }
 
   // Cells
-  > tr {
-    > th,
-    > td {
+  tr {
+    th,
+    td {
       padding: $table-cell-padding;
       vertical-align: top;
+      border: 1px solid #eee;
     }
   }
 
