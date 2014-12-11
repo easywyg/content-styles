@@ -32,6 +32,6 @@ Put this file somewhere, in order for it to available by URL.
 
 Then copy this URL and add it to your website settings in [Dashboard](http://easywyg.com/dashboard/).
 
-Our robot will get this css file, parse it and then, build styles dropdown for you:
+Our robot will get this css file, parse it and then, build styles dropdown for you. You should see something like that:
 
 ![Easywyg styles dropdown](styles_dropdown.png)
