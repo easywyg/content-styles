@@ -1,9 +1,12 @@
-// Easywyg default content-styles
+/* Easywyg default content-styles
+ *  NOTE: Comments in this file MUST BE KEPT after compilation
+ */
 
-// Variables
+/* Variables */
 $table-cell-padding: 4px;
 $selection-bg-color: #fff7aa;
 
+/* This needs to support grids, embeds and all other easywyg stuff */
 @import "partials/grids";
 @import "partials/tables";
 @import "partials/embeds";
@@ -11,56 +14,9 @@ $selection-bg-color: #fff7aa;
 
 /* Assume that is your website styles */
 
-::selection { background-color: $selection-bg-color; }
-
 body {
   font-family: Arial, sans-serif;
   padding: 1em;
-}
-
-a {
-  text-decoration: none;
-  color: #0060a0;
-  border-bottom: 1px solid rgba(0,96,160,.2);
-  white-space: nowrap;
-
-  &:hover, &:focus {
-    color: #d04000;
-    border-bottom-color: rgba(208,64,0,.2);
-  }
-
-  &:visited {
-    color: #7090b0;
-    border-bottom-color: rgba(112,144,176,.2);
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  clear: both;
-}
-
-sup, sub {
-  vertical-align: baseline;
-  position: relative;
-  top: -0.4em;
-}
-
-sub { top: 0.4em; }
-
-ul, ol { clear: both; }
-p { hyphens: auto; }
-
-hr {
-  position: relative;
-
-  &:before {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 0;
-    right: 0;
-    top: 0.5em;
-  }
 }
 
 /* Styles below will be added into 'styles' dropdown in easywyg editor */
@@ -206,44 +162,3 @@ var { color: inherit; }
  * Group: Formatting
  */
 samp { color: inherit; }
-
-
-/* Name: 2 columns
- * Group: Newspaper layout
- */
-p.two-columns {
-  columns: 2;
-  column-gap: 30px;
-}
-
-/* Name: 3 columns
- * Group: Newspaper layout
- */
-p.three-columns {
-  columns: 3;
-  column-gap: 30px;
-}
-
-/* Name: 4 columns
- * Group: Newspaper layout
- */
-p.four-columns {
-  columns: 4;
-  column-gap: 30px;
-}
-
-/* Name: 5 columns
- * Group: Newspaper layout
- */
-p.five-columns {
-  columns: 5;
-  column-gap: 30px;
-}
-
-/* Name: 6 columns
- * Group: Newspaper layout
- */
-p.six-columns {
-  columns: 6;
-  column-gap: 30px;
-}
