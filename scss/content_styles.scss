@@ -19,7 +19,9 @@ body {
   padding: 1em;
 }
 
-/* Styles below will be added into 'styles' dropdown in easywyg editor */
+/* Styles below will be added into 'styles' dropdown in easywyg editor
+ * NOTE: Empty selectors will be removed after compilation.
+ */
 
 /* Name: Paragraph
  * Group: Paragraphs
@@ -44,32 +46,32 @@ p.right  { text-align: right; }
 /* Name: Heading H1
  * Group: Paragraphs
  */
-h1 { text-align: center; line-height: 1.5em; }
+h1 { color: inherit }
 
 /* Name: Heading H2
  * Group: Paragraphs
  */
-h2 { color: inherit; line-height: 1.4em; }
+h2 { color: inherit; }
 
 /* Name: Heading H3
  * Group: Paragraphs
  */
-h3 { color: inherit; line-height: 1.4em; }
+h3 { color: inherit; }
 
 /* Name: Heading H4
  * Group: Paragraphs
  */
-h4 { color: inherit; line-height: 1.4em; }
+h4 { color: inherit; }
 
 /* Name: Heading H5
  * Group: Paragraphs
  */
-h5 { color: inherit; line-height: 1.4em; }
+h5 { color: inherit; }
 
 /* Name: Heading H6
  * Group: Paragraphs
  */
-h6 { color: inherit; line-height: 1.4em; }
+h6 { color: inherit; }
 
 /* Name: Headline
  * Group: Paragraphs
@@ -77,7 +79,7 @@ h6 { color: inherit; line-height: 1.4em; }
 h3.headline {
   text-align: center;
   margin: 2em 0;
-  color: #2B679A;
+  color: #4b96e1;
   font-weight: normal;
 }
 
@@ -93,7 +95,6 @@ blockquote.annotation {
   margin: 2em 5em;
   font-style: italic;
   padding: 0;
-  background-color: #CBEAFF !important;
   padding: 15px;
   border-radius: 4px;
 }
