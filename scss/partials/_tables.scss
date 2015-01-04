@@ -5,6 +5,7 @@ table {
   max-width: 100%;
   margin: 1em 0;
   border-collapse: collapse;
+  table-layout: fixed;
 
   // Bottom align for column headings
   tr th {
