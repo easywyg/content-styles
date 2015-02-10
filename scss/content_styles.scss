@@ -9,73 +9,74 @@ $table-cell-padding: 4px;
 $selection-bg-color: #fff7aa;
 
 /* This needs to support grids, embeds and all other easywyg stuff */
-@import "partials/grids";
-@import "partials/tables";
-@import "partials/embeds";
-@import "partials/figures";
+@import "content-styles/grids";
+@import "content-styles/tables";
+@import "content-styles/embeds";
+@import "content-styles/figures";
+@import "content-styles/headings";
 
 /* Assume that is your website styles */
 
 body {
   font-family: Arial, sans-serif;
-  padding: 1em;
 }
 
 /* Styles below will be added into 'styles' dropdown in easywyg editor
- * NOTE: Empty selectors will be removed after compilation.
+ * NOTE: Empty selectors will be removed after compilation. Add ! at the
+ * beginning of comment to preserve comment after compilation. That matters.
  */
 
-/* Name: Paragraph
+/*! Name: Paragraph
  * Group: Paragraphs
  */
 p { color: inherit; }
 
-/* Name: Centered Paragraph
+/*! Name: Centered Paragraph
  * Group: Paragraphs
  */
 p.center { text-align: center; }
 
-/* Name: Bigger Paragraph
+/*! Name: Bigger Paragraph
  * Group: Paragraphs
  */
 p.bigger { font-size: 120%; }
 
-/* Name: Right Aligned Paragraph
+/*! Name: Right Aligned Paragraph
  * Group: Paragraphs
  */
 p.right  { text-align: right; }
 
-/* Name: Heading H1
+/*! Name: Heading H1
  * Group: Paragraphs
  */
 h1 { color: inherit }
 
-/* Name: Heading H2
+/*! Name: Heading H2
  * Group: Paragraphs
  */
 h2 { color: inherit; }
 
-/* Name: Heading H3
+/*! Name: Heading H3
  * Group: Paragraphs
  */
 h3 { color: inherit; }
 
-/* Name: Heading H4
+/*! Name: Heading H4
  * Group: Paragraphs
  */
 h4 { color: inherit; }
 
-/* Name: Heading H5
+/*! Name: Heading H5
  * Group: Paragraphs
  */
 h5 { color: inherit; }
 
-/* Name: Heading H6
+/*! Name: Heading H6
  * Group: Paragraphs
  */
 h6 { color: inherit; }
 
-/* Name: Headline
+/*! Name: Headline
  * Group: Paragraphs
  */
 h3.headline {
@@ -85,12 +86,12 @@ h3.headline {
   font-weight: normal;
 }
 
-/* Name: Blockquote
+/*! Name: Blockquote
  * Group: Paragraphs
  */
 blockquote { color: inherit; }
 
-/* Name: Annotation
+/*! Name: Annotation
  * Group: Paragraphs
  */
 blockquote.annotation {
@@ -101,67 +102,67 @@ blockquote.annotation {
   border-radius: 4px;
 }
 
-/* Name: Preformatted Text
+/*! Name: Preformatted Text
  * Group: Paragraphs
  */
 pre { color: inherit; }
 
-/* Name: Bold
+/*! Name: Bold
  * Group: Formatting
  */
 strong { color: inherit; }
 
-/* Name: Italic
+/*! Name: Italic
  * Group: Formatting
  */
 em { color: inherit; }
 
-/* Name: Strike
+/*! Name: Strike
  * Group: Formatting
  */
 s { color: inherit; }
 
-/* Name: Underline
+/*! Name: Underline
  * Group: Formatting
  */
 u { color: inherit; }
 
-/* Name: Quote
+/*! Name: Quote
  * Group: Formatting
  */
 q { color: inherit; }
 
-/* Name: Code
+/*! Name: Code
  * Group: Formatting
  */
 code { color: inherit; }
 
-/* Name: Address
+/*! Name: Address
  * Group: Formatting
  */
 address { color: inherit; }
 
-/* Name: Subscript
+/*! Name: Subscript
  * Group: Formatting
  */
 sub { color: inherit; }
 
-/* Name: Superscript
+/*! Name: Superscript
  * Group: Formatting
  */
 sup { color: inherit; }
 
-/* Name: Smaller Text
+/*! Name: Smaller Text
  * Group: Formatting
  */
 small { color: inherit; }
 
-/* Name: Variable or Formula
+/*! Name: Variable or Formula
  * Group: Formatting
  */
 var { color: inherit; }
 
-/* Name: Sample Text
+/*! Name: Sample Text
  * Group: Formatting
  */
 samp { color: inherit; }
