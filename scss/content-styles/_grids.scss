@@ -1,16 +1,20 @@
 //////////////////////////////////////////////////////////////////////////////
 // Grid (12-column grid)
-.easywyg-grid [class^=easywyg-col-] {
+[class^=easywyg-col-] {
   position: relative;
   min-height: 1em;
   padding-left: 1em;
   padding-right: 1em;
   float: left !important;
 
-  figure img { max-width: 100%; }
+  figure img {
+    max-width: 100%;
+  }
 
-  :first-child { margin-top: 0; }
-  *:last-of-type { margin-bottom: 0; }
+  p, blockquote, h1, h2, h3, h4, h5, h6, figure, pre, address, ul, ol, table {
+    &:first-child { margin-top: 0; }
+    &:last-child { margin-top: 0; }
+  }
 }
 
 .easywyg-col-1  { width: percentage(1 / 12); }
@@ -28,6 +32,7 @@
 
 .easywyg-grid {
   clear: both;
+  display: flex;
 
   * { box-sizing: border-box; }
 
@@ -39,8 +44,8 @@
   // Clearfix
   &:before,
   &:after {
-    content: " ";
-    display: table;
+    content: " "; // 1
+    display: table; // 2
   }
   &:after {
     clear: both;
@@ -48,4 +53,5 @@
 
   margin: 1em -1em;
 }
+
 
