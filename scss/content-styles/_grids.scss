@@ -12,8 +12,8 @@
   }
 
   p, blockquote, h1, h2, h3, h4, h5, h6, figure, pre, address, ul, ol, table {
-    &:first-child { margin-top: 0; }
-    &:last-child { margin-bottom: 0; }
+    &:first-of-type { margin-top: 0; }
+    &:last-of-type { margin-bottom: 0; }
   }
 }
 
