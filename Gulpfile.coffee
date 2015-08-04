@@ -1,30 +1,48 @@
-gulp         = require("gulp")
-sass         = require("gulp-sass")
-csso         = require("gulp-csso")
-autoprefixer = require("gulp-autoprefixer")
-connect      = require("gulp-connect")
-del          = require("del")
-sequence     = require("run-sequence")
+gulp          = require("gulp")
+csso          = require("gulp-csso")
+connect       = require("gulp-connect")
+del           = require("del")
+sequence      = require("run-sequence")
+postcss       = require('gulp-postcss')
+corepostcss   = require('postcss')
+simplevars    = require('postcss-simple-vars')
+nestedcss     = require('postcss-nested')
+autoprefixer  = require('autoprefixer-core')
+hexrgba       = require('postcss-hexrgba')
+postcssimport = require('postcss-import')
+
+browsers = [
+  "Firefox >= 10",
+  "Chrome >= 10",
+  "IE >= 11",
+  "Opera >= 15",
+  "Safari >= 6"
+]
+
+processors = [
+  autoprefixer(browsers: browsers),
+  simplevars,
+  nestedcss,
+  hexrgba,
+  postcssimport(plugins: [
+    nestedcss,
+    autoprefixer(browsers: browsers),
+    simplevars,
+    nestedcss,
+    hexrgba
+  ])
+]
 
 # Copy html
 gulp.task "html", ->
   gulp.src("./*.html")
-       .pipe(gulp.dest("./release/"))
-       .pipe(connect.reload())
+      .pipe(gulp.dest("./release/"))
+      .pipe(connect.reload())
 
-# Compile scss
+# Compile css
 gulp.task "content_styles", ->
-  gulp.src("./scss/content_styles.scss")
-      .pipe(sass())
-      .pipe(autoprefixer(
-        browsers : [
-          "Firefox >= 10",
-          "Chrome >= 10",
-          "IE >= 11",
-          "Opera >= 15",
-          "Safari >= 6"
-        ]
-      ))
+  gulp.src("./css/content_styles.css")
+      .pipe(postcss(processors))
       .pipe(gulp.dest("./release/"))
       .pipe(connect.reload())
 
@@ -49,7 +67,7 @@ gulp.task "connect", ->
 
 # Rerun the task when a file changes
 gulp.task "watch", ->
-  gulp.watch("./scss/**/*.scss", ["content_styles"])
+  gulp.watch("./css/**/*.css", ["content_styles"])
   gulp.watch("./*.html", ["html"])
 
 gulp.task "default", ->

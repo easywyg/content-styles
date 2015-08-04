@@ -4,18 +4,14 @@
  * TLYK: This file will be prosessed with Autoprefixer automatically.
  */
 
-/* Variables */
-$table-cell-padding: 4px;
-$selection-bg-color: #fff7aa;
-
 /* This needs to support grids, embeds and all other easywyg stuff */
-@import "content-styles/grids";
-@import "content-styles/tables";
-@import "content-styles/embeds";
-@import "content-styles/figures";
-@import "content-styles/headings";
+@import "content_styles/grids";
+@import "content_styles/tables";
+@import "content_styles/embeds";
+@import "content_styles/figures";
+@import "content_styles/headings";
 
-/* Assume that is your website styles */
+/* Assume that is your website styles below */
 
 body {
   font-family: Arial, sans-serif;

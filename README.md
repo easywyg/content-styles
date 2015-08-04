@@ -25,7 +25,7 @@ $ gulp
 
 Open browser: http://localhost:9000/
 
-After that, rework styles for your requirements (see scss/content_styles.css)
+After that, rework styles for your requirements (see css/content_styles.css)
 
 Then you need to require result `.css` file to Easywyg editor and also to your website layout.
 Put this file somewhere, in order for it to available by URL.
