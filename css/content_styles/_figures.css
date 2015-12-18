@@ -28,7 +28,7 @@ figure {
     vertical-align: middle;
     max-width: 100%;
     height: auto;
-    border: 0;
+    border: 1px solid #f4f4f4;
   }
 
   figcaption { text-align: center; }
