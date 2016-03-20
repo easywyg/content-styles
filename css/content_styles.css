@@ -22,58 +22,58 @@ body {
  * beginning of comment to preserve comment after compilation. That matters.
  */
 
-/*! Name: Paragraph
- * Group: Paragraphs
+/*! Name: Параграф
+ * Group: Параграфы
  */
 p { color: inherit; }
 
-/*! Name: Centered Paragraph
- * Group: Paragraphs
+/*! Name: Центрированный параграф
+ * Group: Параграфы
  */
 p.center { text-align: center; }
 
-/*! Name: Bigger Paragraph
- * Group: Paragraphs
+/*! Name: Увеличенный текст
+ * Group: Параграфы
  */
 p.bigger { font-size: 120%; }
 
-/*! Name: Right Aligned Paragraph
- * Group: Paragraphs
+/*! Name: Отбивка справа
+ * Group: Параграфы
  */
 p.right  { text-align: right; }
 
-/*! Name: Heading H1
- * Group: Paragraphs
+/*! Name: Заголовок H1
+ * Group: Параграфы
  */
 h1 { color: inherit }
 
-/*! Name: Heading H2
- * Group: Paragraphs
+/*! Name: Заголовок H2
+ * Group: Параграфы
  */
 h2 { color: inherit; }
 
-/*! Name: Heading H3
- * Group: Paragraphs
+/*! Name: Заголовок H3
+ * Group: Параграфы
  */
 h3 { color: inherit; }
 
-/*! Name: Heading H4
- * Group: Paragraphs
+/*! Name: Заголовок H4
+ * Group: Параграфы
  */
 h4 { color: inherit; }
 
-/*! Name: Heading H5
- * Group: Paragraphs
+/*! Name: Заголовок H5
+ * Group: Параграфы
  */
 h5 { color: inherit; }
 
-/*! Name: Heading H6
- * Group: Paragraphs
+/*! Name: Заголовок H6
+ * Group: Параграфы
  */
 h6 { color: inherit; }
 
-/*! Name: Headline
- * Group: Paragraphs
+/*! Name: Подзаголовок
+ * Group: Параграфы
  */
 h3.headline {
   text-align: center;
@@ -82,13 +82,13 @@ h3.headline {
   font-weight: normal;
 }
 
-/*! Name: Blockquote
- * Group: Paragraphs
+/*! Name: Блочная цитата
+ * Group: Параграфы
  */
 blockquote { color: inherit; }
 
-/*! Name: Annotation
- * Group: Paragraphs
+/*! Name: Аннотация
+ * Group: Параграфы
  */
 blockquote.annotation {
   margin: 2em 5em;
@@ -98,67 +98,67 @@ blockquote.annotation {
   border-radius: 4px;
 }
 
-/*! Name: Preformatted Text
- * Group: Paragraphs
+/*! Name: Преформатированный текст
+ * Group: Параграфы
  */
 pre { color: inherit; }
 
-/*! Name: Bold
- * Group: Formatting
+/*! Name: Полужирный
+ * Group: Форматирование
  */
 strong { color: inherit; }
 
-/*! Name: Italic
- * Group: Formatting
+/*! Name: Курсив
+ * Group: Форматирование
  */
 em { color: inherit; }
 
-/*! Name: Strike
- * Group: Formatting
+/*! Name: Зачеркнутый
+ * Group: Форматирование
  */
 s { color: inherit; }
 
-/*! Name: Underline
- * Group: Formatting
+/*! Name: Подчеркнутый
+ * Group: Форматирование
  */
 u { color: inherit; }
 
-/*! Name: Quote
- * Group: Formatting
+/*! Name: Строчная цитата
+ * Group: Форматирование
  */
 q { color: inherit; }
 
-/*! Name: Code
- * Group: Formatting
+/*! Name: Код
+ * Group: Форматирование
  */
 code { color: inherit; }
 
-/*! Name: Address
- * Group: Formatting
+/*! Name: Адрес
+ * Group: Форматирование
  */
 address { color: inherit; }
 
-/*! Name: Subscript
- * Group: Formatting
+/*! Name: Индекс
+ * Group: Форматирование
  */
 sub { color: inherit; }
 
-/*! Name: Superscript
- * Group: Formatting
+/*! Name: Верхний индекс
+ * Group: Форматирование
  */
 sup { color: inherit; }
 
-/*! Name: Smaller Text
- * Group: Formatting
+/*! Name: Уменьшенный текст
+ * Group: Форматирование
  */
 small { color: inherit; }
 
-/*! Name: Variable or Formula
- * Group: Formatting
+/*! Name: Переменная или формула
+ * Group: Форматирование
  */
 var { color: inherit; }
 
-/*! Name: Sample Text
- * Group: Formatting
+/*! Name: Образец
+ * Group: Форматирование
  */
 samp { color: inherit; }
