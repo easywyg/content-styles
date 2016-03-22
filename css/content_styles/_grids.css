@@ -14,7 +14,7 @@
     &:first-of-type { margin-top: 0; }
   }
 
-  p, blockquote, figure, pre, address, ul, ol, table {
+  p {
     &:last-of-type { margin-bottom: 0; }
   }
 }
