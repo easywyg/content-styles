@@ -101,7 +101,7 @@ blockquote.annotation {
 /*! Name: Преформатированный текст
  * Group: Параграфы
  */
-pre { color: inherit; }
+pre { white-space: pre-line; }
 
 /*! Name: Полужирный
  * Group: Форматирование
