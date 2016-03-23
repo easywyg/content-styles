@@ -101,7 +101,7 @@ blockquote.annotation {
 /*! Name: Preformatted Text
  * Group: Paragraphs
  */
-pre { color: inherit; }
+pre { white-space: pre-line; }
 
 /*! Name: Bold
  * Group: Formatting
